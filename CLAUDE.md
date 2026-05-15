@@ -47,6 +47,7 @@ NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=
 ### DB 스키마
 
 현재 구현된 테이블:
+
 - `public.profiles` — auth.users와 1:1 연결, RLS 활성화, 신규 유저 생성 시 트리거로 자동 생성
 
 스키마 변경은 Supabase MCP(`mcp__supabase__apply_migration`) 또는 Supabase 대시보드에서 수행.  
