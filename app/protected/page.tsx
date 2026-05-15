@@ -1,9 +1,11 @@
 import { redirect } from "next/navigation";
+import Link from "next/link";
 
 import { createClient } from "@/lib/supabase/server";
 import { InfoIcon } from "lucide-react";
 import { FetchDataSteps } from "@/components/tutorial/fetch-data-steps";
 import { Suspense } from "react";
+import { Button } from "@/components/ui/button";
 
 async function UserDetails() {
   const supabase = await createClient();
@@ -33,6 +35,9 @@ export default function ProtectedPage() {
             <UserDetails />
           </Suspense>
         </pre>
+        <Button asChild variant="outline" className="mt-2">
+          <Link href="/protected/profile">내 프로필 보기</Link>
+        </Button>
       </div>
       <div>
         <h2 className="font-bold text-2xl mb-4">Next steps</h2>
