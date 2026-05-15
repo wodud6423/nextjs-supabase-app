@@ -10,7 +10,13 @@
       "mcp__context7__query-docs",
       "mcp__supabase__apply_migration",
       "mcp__supabase__execute_sql",
-      "mcp__supabase__generate_typescript_types"
+      "mcp__supabase__generate_typescript_types",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\wodud\\\\workspace\\\\courses\\\\nextjs-supabase-app\" -Exclude node_modules,dist,.next -Directory)",
+      "Bash(Select-Object -ExpandProperty Name)",
+      "mcp__shrimp-task-manager__init_project_rules",
+      "mcp__shrimp-task-manager__process_thought",
+      "mcp__shrimp-task-manager__list_tasks",
+      "mcp__shrimp-task-manager__split_tasks"
     ]
   }
 }
