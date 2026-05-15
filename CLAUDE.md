@@ -72,6 +72,13 @@ app/
 └── (미구현) invoice/[id]/     # 견적서 조회 (공개, PRD F002)
 ```
 
+## 작업 완료 체크리스트
+
+'''bash
+npm run check-all
+npm run build
+'''
+
 ## 코딩 컨벤션
 
 - `any` 타입 사용 금지
