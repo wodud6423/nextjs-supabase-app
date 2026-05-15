@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 
+import { GoogleLoginButton } from '@/components/google-login-button'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
@@ -98,6 +99,20 @@ export function SignUpForm({ className, ...props }: React.ComponentPropsWithoutR
                 {isLoading ? 'Creating an account...' : 'Sign up'}
               </Button>
             </div>
+
+            {/* 소셜 로그인 구분선 */}
+            <div className="relative my-4">
+              <div className="absolute inset-0 flex items-center">
+                <span className="w-full border-t" />
+              </div>
+              <div className="relative flex justify-center text-xs uppercase">
+                <span className="bg-card px-2 text-muted-foreground">또는</span>
+              </div>
+            </div>
+
+            {/* 구글 소셜 로그인 */}
+            <GoogleLoginButton redirectTo="/protected" />
+
             <div className="mt-4 text-center text-sm">
               Already have an account?{' '}
               <Link href="/auth/login" className="underline underline-offset-4">
